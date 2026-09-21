@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,36 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Spice Villa | Multi-Cuisine Restaurant</title>
+    <title>Spice Villa | Premium Dining</title>
 
     <link rel="stylesheet" href="style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
 
+<!-- ================= NAVBAR ================= -->
 
-<!-- ================= HEADER ================= -->
+<header class="navbar">
 
-<header class="header">
+    <a href="#home" class="logo">
+        <span>🍴</span>
+        <div>
+            <strong>Spice</strong>
+            <small>VILLA</small>
+        </div>
+    </a>
 
-    <div class="logo">
-        🍴 Spice Villa
-    </div>
-
-    <nav>
-        <a href="#home">Home</a>
+    <nav class="nav-links">
+        <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#menu">Menu</a>
+        <a href="#offers">Offers</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <a href="#menu" class="header-btn">
-        Order Now
-    </a>
+    <div class="nav-right">
+
+        <button class="cart-btn" onclick="openCart()">
+            🛒
+            <span id="cartCount">0</span>
+        </button>
+
+        <a href="#menu" class="order-btn">
+            Order Now
+        </a>
+
+    </div>
 
 </header>
 
@@ -44,34 +59,61 @@
 
 <section id="home" class="hero">
 
+    <div class="hero-overlay"></div>
+
     <div class="hero-content">
 
-        <p class="small-title">
-            ✨ WELCOME TO SPICE VILLA ✨
-        </p>
+        <div class="hero-tag">
+            ✦ AUTHENTIC TASTE • PREMIUM EXPERIENCE ✦
+        </div>
 
         <h1>
-            Taste The
-            <span>Happiness!</span>
+            Good Food.
+            <span>Good Mood.</span>
         </h1>
 
         <p>
-            Delicious food, unforgettable moments and
-            flavors that bring everyone together.
+            Discover delicious flavors, freshly prepared dishes
+            and unforgettable moments at Spice Villa.
         </p>
 
         <div class="hero-buttons">
 
-            <a href="#menu" class="primary-btn">
-                🍽️ Explore Menu
+            <a href="#menu" class="main-btn">
+                Explore Menu
+                <span>→</span>
             </a>
 
-            <a href="#about" class="secondary-btn">
-                Discover More
+            <a href="#about" class="outline-btn">
+                Our Story
             </a>
 
         </div>
 
+        <div class="hero-stats">
+
+            <div>
+                <strong>4.9<span>★</span></strong>
+                <small>Customer Rating</small>
+            </div>
+
+            <div>
+                <strong>25+</strong>
+                <small>Signature Dishes</small>
+            </div>
+
+            <div>
+                <strong>10K+</strong>
+                <small>Happy Customers</small>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="scroll-down">
+        <span></span>
+        Scroll to explore
     </div>
 
 </section>
@@ -79,70 +121,68 @@
 
 <!-- ================= ABOUT ================= -->
 
-<section id="about" class="about">
+<section id="about" class="about-section">
 
-    <div class="about-image">
+    <div class="about-image-wrapper">
+
+        <div class="image-decoration"></div>
 
         <img
-            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
-            alt="Delicious Restaurant Food">
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=85"
+            alt="Restaurant Interior">
+
+        <div class="experience-card">
+            <strong>12+</strong>
+            <span>Years of<br>Experience</span>
+        </div>
 
     </div>
-    
 
 
     <div class="about-content">
 
-        <p class="section-small-title">
+        <div class="section-label">
             ABOUT SPICE VILLA
-        </p>
+        </div>
 
         <h2>
-            Where Every Bite
-            <span>Tells a Story</span>
+            Crafted with passion,
+            <span>served with love.</span>
         </h2>
 
         <p>
-            Welcome to Spice Villa, your destination for
-            delicious food and unforgettable dining experiences.
+            At Spice Villa, we believe food is more than just a meal.
+            It is an experience that brings people together.
         </p>
 
         <p>
-            From spicy Indian dishes to cheesy pizzas,
-            refreshing drinks and delicious desserts,
-            we have something for everyone.
+            Our chefs combine traditional Indian flavors with
+            modern culinary techniques to create dishes that
+            are full of taste, freshness and passion.
         </p>
 
+        <div class="about-points">
 
-        <div class="features">
-
-            <div class="feature-box">
-
-                <h3>🍽️</h3>
-
-                <p>Fresh Food</p>
-
+            <div>
+                <span>✓</span>
+                <p>Fresh & Quality Ingredients</p>
             </div>
 
-
-            <div class="feature-box">
-
-                <h3>👨‍🍳</h3>
-
-                <p>Expert Chefs</p>
-
+            <div>
+                <span>✓</span>
+                <p>Experienced Professional Chefs</p>
             </div>
 
-
-            <div class="feature-box">
-
-                <h3>❤️</h3>
-
-                <p>Made With Love</p>
-
+            <div>
+                <span>✓</span>
+                <p>Warm & Family Friendly Atmosphere</p>
             </div>
 
         </div>
+
+        <a href="#menu" class="dark-btn">
+            Discover Our Menu →
+        </a>
 
     </div>
 
@@ -151,336 +191,357 @@
 
 <!-- ================= MENU ================= -->
 
-<section id="menu" class="menu">
+<section id="menu" class="menu-section">
 
-    <div class="section-heading">
+    <div class="section-title">
 
-        <p>OUR SPECIAL MENU</p>
+        <div class="section-label">
+            OUR MENU
+        </div>
 
         <h2>
-            Explore Our
-            <span>Popular Dishes</span>
+            Taste the <span>difference.</span>
         </h2>
 
-        <p class="menu-subtitle">
-            Delicious choices made for every mood.
+        <p>
+            Handcrafted dishes made with fresh ingredients
+            and served with love.
         </p>
 
     </div>
 
 
-    <div class="menu-container">
+    <!-- MENU FILTER -->
+
+    <div class="menu-filter">
+
+        <button class="filter-btn active" onclick="filterMenu('all', this)">
+            All
+        </button>
+
+        <button class="filter-btn" onclick="filterMenu('indian', this)">
+            🇮🇳 Indian
+        </button>
+
+        <button class="filter-btn" onclick="filterMenu('fastfood', this)">
+            🍔 Fast Food
+        </button>
+
+        <button class="filter-btn" onclick="filterMenu('dessert', this)">
+            🍰 Desserts
+        </button>
+
+        <button class="filter-btn" onclick="filterMenu('drink', this)">
+            🥤 Drinks
+        </button>
+
+    </div>
 
 
-        <!-- ================= CARD 1 ================= -->
+    <!-- FOOD GRID -->
 
-        <div class="food-card">
+    <div class="food-grid">
 
-            <div class="food-image">
+
+        <!-- CARD 1 -->
+
+        <article class="food-card" data-category="fastfood">
+
+            <div class="food-img">
 
                 <img
-                    src="https://png.pngtree.com/png-clipart/20250106/original/pngtree-yummy-stretchy-cheese-pepperoni-pizza-png-image_19960043.png"
-                    alt="Cheesy Pizza">
+                    src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=85"
+                    alt="Pizza">
 
-                <span class="badge">
-                    ⭐ Popular
-                </span>
+                <span class="food-tag">🔥 Popular</span>
+
+                <button class="heart-btn">♡</button>
 
             </div>
 
+            <div class="food-details">
 
-            <div class="food-info">
+                <div class="rating">
+                    ★★★★★ <span>4.9</span>
+                </div>
 
-                <h3>Cheesy Pizza</h3>
+                <h3>Classic Cheese Pizza</h3>
 
                 <p>
-                    Crispy crust loaded with cheese,
-                    vegetables and delicious toppings.
+                    Crispy crust, mozzarella cheese and
+                    delicious fresh toppings.
                 </p>
 
                 <div class="food-bottom">
 
                     <strong>₹249</strong>
 
-                    <a href="#contact" class="add-btn">
-                        + Add
-                    </a>
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('Classic Cheese Pizza',249)">
+                        Add +
+                    </button>
 
                 </div>
 
             </div>
 
-        </div>
+        </article>
 
 
-        <!-- ================= CARD 2 ================= -->
+        <!-- CARD 2 -->
 
-        <div class="food-card">
+        <article class="food-card" data-category="fastfood">
 
-            <div class="food-image">
+            <div class="food-img">
 
                 <img
-                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd"
-                    alt="Classic Burger">
+                    src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=85"
+                    alt="Burger">
 
-                <span class="badge">
-                    🔥 Hot
-                </span>
+                <span class="food-tag hot">🔥 Hot</span>
+
+                <button class="heart-btn">♡</button>
 
             </div>
 
+            <div class="food-details">
 
-            <div class="food-info">
+                <div class="rating">
+                    ★★★★★ <span>4.8</span>
+                </div>
 
-                <h3>Classic Burger</h3>
+                <h3>Spicy Classic Burger</h3>
 
                 <p>
-                    Juicy burger with fresh vegetables,
-                    cheese and special sauce.
+                    Juicy patty, melted cheese, fresh vegetables
+                    and special sauce.
                 </p>
 
                 <div class="food-bottom">
 
                     <strong>₹179</strong>
 
-                    <a href="#contact" class="add-btn">
-                        + Add
-                    </a>
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('Spicy Classic Burger',179)">
+                        Add +
+                    </button>
 
                 </div>
 
             </div>
 
-        </div>
+        </article>
 
 
-        <!-- ================= CARD 3 ================= -->
+        <!-- CARD 3 -->
 
-       <!-- ================= CARD 3 ================= -->
+        <article class="food-card" data-category="indian">
 
-<div class="food-card">
-
-    <div class="food-image">
-
-        <img
-            src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=800&q=80"
-            alt="Chicken Biryani">
-
-        <span class="badge">
-            👑 Chef's Choice
-        </span>
-
-    </div>
-
-
-    <div class="food-info">
-
-        <h3>Chicken Biryani</h3>
-
-        <p>
-            Aromatic basmati rice cooked with
-            spices and tender chicken.
-        </p>
-
-        <div class="food-bottom">
-
-            <strong>₹299</strong>
-
-            <a href="#contact" class="add-btn">
-                + Add
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-        <!-- ================= CARD 4 ================= -->
-
-        <div class="food-card">
-
-            <div class="food-image">
+            <div class="food-img">
 
                 <img
-                    src="https://www.indianhealthyrecipes.com/wp-content/uploads/2014/11/paneer-tikka-masala-recipe-1.jpg"
-                    alt="Paneer Tikka">
+                    src="https://png.pngtree.com/png-vector/20240712/ourmid/pngtree-a-delicious-chicken-biryani-png-image_13066955.png"
+                    alt="Chicken Biryani">
 
-                <span class="badge">
-                    🌶️ Special
-                </span>
+                <span class="food-tag chef">👑 Chef's Choice</span>
+
+                <button class="heart-btn">♡</button>
 
             </div>
 
+            <div class="food-details">
 
-            <div class="food-info">
+                <div class="rating">
+                    ★★★★★ <span>5.0</span>
+                </div>
 
-                <h3>Paneer Tikka</h3>
+                <h3>Royal Chicken Biryani</h3>
 
                 <p>
-                    Soft paneer cubes marinated with
-                    aromatic Indian spices.
+                    Aromatic basmati rice, tender chicken and
+                    traditional Indian spices.
+                </p>
+
+                <div class="food-bottom">
+
+                    <strong>₹299</strong>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('Royal Chicken Biryani',299)">
+                        Add +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- CARD 4 -->
+
+        <article class="food-card" data-category="indian">
+
+            <div class="food-img">
+
+                <img
+                    src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=800&q=85"
+                    alt="Paneer Tikka">
+
+                <span class="food-tag">🌶 Special</span>
+
+                <button class="heart-btn">♡</button>
+
+            </div>
+
+            <div class="food-details">
+
+                <div class="rating">
+                    ★★★★★ <span>4.9</span>
+                </div>
+
+                <h3>Tandoori Paneer Tikka</h3>
+
+                <p>
+                    Soft paneer marinated in aromatic spices
+                    and grilled to perfection.
                 </p>
 
                 <div class="food-bottom">
 
                     <strong>₹229</strong>
 
-                    <a href="#contact" class="add-btn">
-                        + Add
-                    </a>
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('Tandoori Paneer Tikka',229)">
+                        Add +
+                    </button>
 
                 </div>
 
             </div>
 
-        </div>
+        </article>
 
 
-        <!-- ================= CARD 5 ================= -->
+        <!-- CARD 5 -->
 
-        <div class="food-card">
+        <article class="food-card" data-category="fastfood">
 
-            <div class="food-image">
+            <div class="food-img">
 
                 <img
-                    src="https://images.unsplash.com/photo-1585032226651-759b368d7246"
-                    alt="Veg Noodles">
+                    src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=85"
+                    alt="Noodles">
 
-                <span class="badge">
-                    🌶️ Spicy
-                </span>
+                <span class="food-tag hot">🌶 Spicy</span>
+
+                <button class="heart-btn">♡</button>
 
             </div>
 
+            <div class="food-details">
 
-            <div class="food-info">
+                <div class="rating">
+                    ★★★★★ <span>4.7</span>
+                </div>
 
-                <h3>Veg Noodles</h3>
+                <h3>Chinese Veg Noodles</h3>
 
                 <p>
-                    Stir-fried noodles with fresh vegetables
-                    and special sauces.
+                    Stir-fried noodles with crunchy vegetables
+                    and special Asian sauces.
                 </p>
 
                 <div class="food-bottom">
 
                     <strong>₹159</strong>
 
-                    <a href="#contact" class="add-btn">
-                        + Add
-                    </a>
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('Chinese Veg Noodles',159)">
+                        Add +
+                    </button>
 
                 </div>
 
             </div>
 
-        </div>
+        </article>
 
 
-        <!-- ================= CARD 6 ================= -->
+        <!-- CARD 6 -->
 
-        <div class="food-card">
+        <article class="food-card" data-category="dessert">
 
-            <div class="food-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af"
-                    alt="Cheese Sandwich">
-
-                <span class="badge">
-                    🧀 Favorite
-                </span>
-
-            </div>
-
-
-            <div class="food-info">
-
-                <h3>Cheese Sandwich</h3>
-
-                <p>
-                    Grilled sandwich filled with vegetables
-                    and melted cheese.
-                </p>
-
-                <div class="food-bottom">
-
-                    <strong>₹139</strong>
-
-                    <a href="#contact" class="add-btn">
-                        + Add
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- ================= CARD 7 ================= -->
-
-        <div class="food-card">
-
-            <div class="food-image">
+            <div class="food-img">
 
                 <img
-                    src="https://images.unsplash.com/photo-1578985545062-69928b1d9587"
+                    src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=85"
                     alt="Chocolate Cake">
 
-                <span class="badge">
-                    🍫 Sweet
-                </span>
+                <span class="food-tag dessert">🍫 Sweet</span>
+
+                <button class="heart-btn">♡</button>
 
             </div>
 
+            <div class="food-details">
 
-            <div class="food-info">
+                <div class="rating">
+                    ★★★★★ <span>4.9</span>
+                </div>
 
-                <h3>Chocolate Cake</h3>
+                <h3>Chocolate Truffle Cake</h3>
 
                 <p>
-                    Rich, soft and delicious chocolate
-                    cake with creamy frosting.
+                    Rich chocolate cake layered with creamy
+                    chocolate frosting.
                 </p>
 
                 <div class="food-bottom">
 
                     <strong>₹149</strong>
 
-                    <a href="#contact" class="add-btn">
-                        + Add
-                    </a>
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('Chocolate Truffle Cake',149)">
+                        Add +
+                    </button>
 
                 </div>
 
             </div>
 
-        </div>
+        </article>
 
 
-        <!-- ================= CARD 8 ================= -->
+        <!-- CARD 7 -->
 
-        <div class="food-card">
+        <article class="food-card" data-category="drink">
 
-            <div class="food-image">
+            <div class="food-img">
 
                 <img
-                    src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA4L3Jhd3BpeGVsX29mZmljZV8zNl9waG90b19vZl9jb2ZmZWVfbGF0dGVfc3BsYXNoX2VmZmVjdF9pc29sYXRlZF9jZDczZWIxMC00MWQ0LTRhOGUtYjNjNi1iMzhmNzk4MDdmNDgucG5n.png"
+                    src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=85"
                     alt="Cold Coffee">
 
-                <span class="badge">
-                    🧊 Chilled
-                </span>
+                <span class="food-tag drink">🧊 Chilled</span>
+
+                <button class="heart-btn">♡</button>
 
             </div>
 
+            <div class="food-details">
 
-            <div class="food-info">
+                <div class="rating">
+                    ★★★★★ <span>4.8</span>
+                </div>
 
-                <h3>Cold Coffee</h3>
+                <h3>Classic Cold Coffee</h3>
 
                 <p>
                     Creamy chilled coffee topped with
@@ -491,15 +552,100 @@
 
                     <strong>₹129</strong>
 
-                    <a href="#contact" class="add-btn">
-                        + Add
-                    </a>
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('Classic Cold Coffee',129)">
+                        Add +
+                    </button>
 
                 </div>
 
             </div>
 
-        </div>
+        </article>
+
+
+        <!-- CARD 8 -->
+
+        <article class="food-card" data-category="dessert">
+
+            <div class="food-img">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&q=85"
+                    alt="Dessert">
+
+                <span class="food-tag dessert">🍩 Favorite</span>
+
+                <button class="heart-btn">♡</button>
+
+            </div>
+
+            <div class="food-details">
+
+                <div class="rating">
+                    ★★★★★ <span>4.8</span>
+                </div>
+
+                <h3>Chocolate Donut</h3>
+
+                <p>
+                    Soft donut coated with rich chocolate
+                    glaze and delicious toppings.
+                </p>
+
+                <div class="food-bottom">
+
+                    <strong>₹99</strong>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('Chocolate Donut',99)">
+                        Add +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= OFFER ================= -->
+
+<section id="offers" class="offer-section">
+
+    <div class="offer-content">
+
+        <span class="offer-label">
+            ✦ TODAY'S SPECIAL ✦
+        </span>
+
+        <h2>
+            Get <span>20% OFF</span>
+            your first order
+        </h2>
+
+        <p>
+            Experience the taste of Spice Villa.
+            Order today and enjoy your first meal with us.
+        </p>
+
+        <a href="#menu" class="main-btn">
+            Order Now →
+        </a>
+
+    </div>
+
+    <div class="offer-image">
+
+        <img
+            src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=85"
+            alt="Restaurant Food">
 
     </div>
 
@@ -508,138 +654,90 @@
 
 <!-- ================= CONTACT ================= -->
 
-<section id="contact" class="contact">
+<section id="contact" class="contact-section">
 
-    <div class="contact-heading">
+    <div class="section-title">
 
-        <p>
-            GET IN TOUCH
-        </p>
+        <div class="section-label">
+            CONTACT US
+        </div>
 
         <h2>
-            Visit <span>Spice Villa</span>
+            Let's make your <span>day delicious.</span>
         </h2>
 
-        <p class="contact-subtitle">
-            We would love to serve you!
+        <p>
+            Have a question or want to make a reservation?
+            We would love to hear from you.
         </p>
 
     </div>
 
 
-    <div class="contact-container">
-
-
-        <!-- CONTACT INFORMATION -->
+    <div class="contact-grid">
 
         <div class="contact-info">
 
-
-            <div class="contact-box">
-
-                <div class="contact-icon">
-                    📍
-                </div>
-
+            <div class="contact-item">
+                <div class="contact-icon">📍</div>
                 <div>
-
-                    <h3>Address</h3>
-
-                    <p>
-                        Main Road, Pune, Maharashtra
-                    </p>
-
+                    <h3>Visit Us</h3>
+                    <p>Main Road, Pune,<br>Maharashtra</p>
                 </div>
-
             </div>
 
-
-            <div class="contact-box">
-
-                <div class="contact-icon">
-                    📞
-                </div>
-
+            <div class="contact-item">
+                <div class="contact-icon">📞</div>
                 <div>
-
-                    <h3>Phone</h3>
-
-                    <p>
-                        +91 98765 43210
-                    </p>
-
+                    <h3>Call Us</h3>
+                    <p>+91 98765 43210</p>
                 </div>
-
             </div>
 
-
-            <div class="contact-box">
-
-                <div class="contact-icon">
-                    ✉️
-                </div>
-
+            <div class="contact-item">
+                <div class="contact-icon">✉️</div>
                 <div>
-
-                    <h3>Email</h3>
-
-                    <p>
-                        spicevilla@gmail.com
-                    </p>
-
+                    <h3>Email Us</h3>
+                    <p>spicevilla@gmail.com</p>
                 </div>
-
             </div>
 
-
-            <div class="contact-box">
-
-                <div class="contact-icon">
-                    🕐
-                </div>
-
+            <div class="contact-item">
+                <div class="contact-icon">🕐</div>
                 <div>
-
                     <h3>Opening Hours</h3>
-
-                    <p>
-                        10:00 AM – 11:00 PM
-                    </p>
-
+                    <p>10:00 AM – 11:00 PM</p>
                 </div>
-
             </div>
 
         </div>
 
 
-        <!-- CONTACT FORM -->
+        <form class="contact-form" onsubmit="sendMessage(event)">
 
-        <form class="contact-form">
+            <div class="input-row">
 
-            <input
-                type="text"
-                placeholder="Your Name"
-                required>
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required>
 
+                <input
+                    type="email"
+                    placeholder="Email Address"
+                    required>
 
-            <input
-                type="email"
-                placeholder="Your Email"
-                required>
-
+            </div>
 
             <input
                 type="tel"
                 placeholder="Phone Number"
                 required>
 
-
             <textarea
-                placeholder="Your Message"
+                placeholder="Write your message..."
                 rows="5"
                 required></textarea>
-
 
             <button type="submit">
                 Send Message 🚀
@@ -656,84 +754,82 @@
 
 <footer class="footer">
 
-    <div class="footer-content">
+    <div class="footer-main">
 
+        <div class="footer-brand">
 
-        <div class="footer-about">
+            <a href="#home" class="logo footer-logo">
+                <span>🍴</span>
 
-            <h2>
-                🍴 Spice Villa
-            </h2>
+                <div>
+                    <strong>Spice</strong>
+                    <small>VILLA</small>
+                </div>
+            </a>
 
             <p>
-                Delicious food, great taste and
-                unforgettable moments.
+                Bringing people together through
+                delicious food and unforgettable moments.
             </p>
 
-        </div>
-
-
-        <div class="footer-links">
-
-            <h3>
-                Quick Links
-            </h3>
-
-            <a href="#home">
-                Home
-            </a>
-
-            <a href="#about">
-                About
-            </a>
-
-            <a href="#menu">
-                Menu
-            </a>
-
-            <a href="#contact">
-                Contact
-            </a>
-
-        </div>
-
-
-        <div class="social">
-
-            <h3>
-                Follow Us
-            </h3>
-
-            <div class="social-icons">
-
-                <a href="#">
-                    f
-                </a>
-
-                <a href="#">
-                    𝕏
-                </a>
-
-                <a href="#">
-                    ◎
-                </a>
-
-                <a href="#">
-                    ▶
-                </a>
-
+            <div class="social-links">
+                <a href="#">f</a>
+                <a href="#">𝕏</a>
+                <a href="#">◎</a>
+                <a href="#">▶</a>
             </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#menu">Our Menu</a>
+            <a href="#offers">Special Offers</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Our Menu</h3>
+
+            <a href="#menu">Indian Cuisine</a>
+            <a href="#menu">Fast Food</a>
+            <a href="#menu">Desserts</a>
+            <a href="#menu">Beverages</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Opening Hours</h3>
+
+            <p>Monday – Friday</p>
+            <strong>10:00 AM – 11:00 PM</strong>
+
+            <p>Saturday – Sunday</p>
+            <strong>09:00 AM – 11:30 PM</strong>
 
         </div>
 
     </div>
 
 
-    <div class="copyright">
+    <div class="footer-bottom">
 
         <p>
-            © 2026 Spice Villa Restaurant.
-            All Rights Reserved.
+            © 2026 Spice Villa. All Rights Reserved.
+        </p>
+
+        <p>
+            Made with ❤️ for food lovers.
         </p>
 
     </div>
@@ -741,6 +837,37 @@
 </footer>
 
 
+<!-- ================= CART MODAL ================= -->
+
+<div class="cart-modal" id="cartModal">
+
+    <div class="cart-box">
+
+        <button class="close-cart" onclick="closeCart()">×</button>
+
+        <h2>Your Cart 🛒</h2>
+
+        <div id="cartItems">
+            <p class="empty-cart">
+                Your cart is empty.
+            </p>
+        </div>
+
+        <div class="cart-total">
+            <span>Total</span>
+            <strong>₹<span id="cartTotal">0</span></strong>
+        </div>
+
+        <button class="checkout-btn" onclick="checkout()">
+            Proceed to Checkout →
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
-```
